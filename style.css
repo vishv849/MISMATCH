@@ -1,0 +1,523 @@
+/* style.css */
+
+/* --------------------------------------------------------------------- */
+/*  TABLE OF CONTENTS
+/* --------------------------------------------------------------------- */
+/*  1.  General Styles
+/*  2.  Header
+/*  3.  Hero Section
+/*  4.  Signup Section
+/*  5.  About Section
+/*  6.  Features Section
+/*  7.  How It Works Section
+/*  8.  Safety Section
+/*  9.  Success Stories Section
+/*  10. FAQ Section
+/*  11. Contact Section
+/*  12. Footer
+/*  13. Media Queries
+/* --------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------- */
+/*  1. General Styles
+/* --------------------------------------------------------------------- */
+:root {
+    --somaiya-orange: #e44d26;
+    --somaiya-orange-dark: #c63d1a;
+    --light-gray: #f4f4f4;
+    --dark-gray: #333;
+    --white: #fff;
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Reusable box-shadow */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+    line-height: 1.6;
+}
+
+a {
+    color: var(--somaiya-orange);
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--somaiya-orange-dark); /* Darken on hover */
+}
+
+.cta-button {
+    background-color: var(--somaiya-orange);
+    color: var(--white);
+    padding: 12px 24px;  /* Slightly larger padding */
+    border: none;
+    border-radius: 8px; /* More rounded */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease-out; /* Transition and slight scaling */
+    display: inline-block;
+    box-shadow: var(--box-shadow); /* Add box shadow for depth */
+}
+
+.cta-button:hover {
+    background-color: var(--somaiya-orange-dark);
+    transform: scale(1.05); /* Slight scale-up on hover */
+}
+
+/* --------------------------------------------------------------------- */
+/*  2. Header
+/* --------------------------------------------------------------------- */
+
+header {
+    background-color: var(--white);
+    color: var(--dark-gray);
+    padding: 20px;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    margin: 0;
+    color: var(--somaiya-orange); /* Make the title orange */
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    margin: 0 15px; /* Slightly more spacing */
+    font-weight: 500; /* Bolder font weight for links */
+}
+
+/* --------------------------------------------------------------------- */
+/*  3. Hero Section
+/* --------------------------------------------------------------------- */
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('hero-image.jpg') center/cover no-repeat; /* Darken the image slightly */
+    color: var(--white);
+    text-align: center;
+    padding: 120px 0; /* More padding for a grander feel */
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);  /* Subtle text shadow for readability */
+}
+
+#hero h2 {
+    font-size: 3.5em; /* Larger heading */
+    margin-bottom: 25px;
+    font-weight: 600; /* Stronger font weight */
+}
+
+#hero p {
+    font-size: 1.3em;
+}
+
+/* --------------------------------------------------------------------- */
+/*  4. Signup Section
+/* --------------------------------------------------------------------- */
+#signup {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: var(--box-shadow);
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+#signup h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--somaiya-orange);
+}
+
+#signup-form label {
+    display: block;
+    margin-bottom: 8px;  /* Slightly more spacing */
+    font-weight: 500;
+}
+
+#signup-form input[type="email"],
+#signup-form input[type="text"],
+#signup-form input[type="tel"],
+#signup-form select,
+#signup-form textarea {
+    width: 100%;
+    padding: 12px; /* More padding */
+    margin-bottom: 22px;  /* More spacing */
+    border: 1px solid #ddd; /* Lighter border */
+    border-radius: 6px; /* Rounded corners */
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+#signup-form textarea {
+    resize: vertical;
+    height: 150px;  /* Slightly taller */
+}
+
+#signup-form .interests {
+    margin-bottom: 25px;
+}
+
+#signup-form .interests label {
+    display: inline-block;
+    margin-right: 15px;
+    font-weight: normal; /* Resetting font weight for checkboxes */
+}
+
+#signup-form button[type="submit"] {
+    width: 100%;
+    background-color: var(--somaiya-orange);
+    color: var(--white);
+    padding: 14px 24px; /* More padding */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease-out;
+    box-shadow: var(--box-shadow);
+}
+
+#signup-form button[type="submit"]:hover {
+    background-color: var(--somaiya-orange-dark);
+    transform: scale(1.02); /* Slight scale-up on hover */
+}
+
+/* --------------------------------------------------------------------- */
+/*  5. About Section
+/* --------------------------------------------------------------------- */
+#about {
+    padding: 50px;
+    text-align: center;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+#about h2 {
+    color: var(--somaiya-orange);
+}
+
+#about ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#about li {
+    margin-bottom: 12px;
+}
+
+/* --------------------------------------------------------------------- */
+/*  6. Features Section
+/* --------------------------------------------------------------------- */
+#features {
+    padding: 50px;
+    background-color: #f9f9f9; /* Consistent background color */
+}
+
+#features h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--somaiya-orange);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));  /* slightly wider */
+    gap: 35px; /* More spacing */
+}
+
+.feature {
+    background-color: var(--white);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.2s ease-out; /* Slight zoom on hover */
+}
+
+.feature:hover {
+    transform: scale(1.03); /* Zoom on hover */
+}
+
+.feature h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.3em;
+}
+
+/* --------------------------------------------------------------------- */
+/*  7. How It Works Section
+/* --------------------------------------------------------------------- */
+#how-it-works {
+    padding: 50px;
+    text-align: center;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+#how-it-works h2 {
+    color: var(--somaiya-orange);
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.step {
+    text-align: center;
+    width: 220px; /* Slightly wider steps */
+    margin-bottom: 25px;
+}
+
+.step h3 {
+    margin-bottom: 12px;
+    font-size: 1.2em;
+}
+
+/* --------------------------------------------------------------------- */
+/*  8. Safety Section
+/* --------------------------------------------------------------------- */
+#safety {
+    padding: 50px;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+#safety h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--somaiya-orange);
+}
+
+#safety ul {
+    list-style: disc;
+    margin-left: 25px; /* More indentation */
+    margin-bottom: 25px;
+}
+
+/* --------------------------------------------------------------------- */
+/*  9. Success Stories Section
+/* --------------------------------------------------------------------- */
+#success-stories {
+    padding: 50px;
+}
+
+#success-stories h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--somaiya-orange);
+}
+
+.success-stories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));  /* slightly wider stories */
+    gap: 35px;
+}
+
+.story {
+    background-color: var(--white);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+/* --------------------------------------------------------------------- */
+/*  10. FAQ Section
+/* --------------------------------------------------------------------- */
+#faq {
+    padding: 50px;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+#faq h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--somaiya-orange);
+}
+
+#faq ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+#faq li a {
+    display: block;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    transition: color 0.3s ease;
+}
+
+#faq li a:hover {
+    color: var(--somaiya-orange-dark);
+}
+
+/* --------------------------------------------------------------------- */
+/*  11. Contact Section
+/* --------------------------------------------------------------------- */
+#contact {
+    padding: 50px;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--somaiya-orange);
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form select,
+#contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 22px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+#contact-form textarea {
+    resize: vertical;
+    height: 170px;  /* A bit taller */
+}
+
+#contact-form button[type="submit"] {
+    width: 100%;
+    background-color: var(--somaiya-orange);
+    color: var(--white);
+    padding: 14px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease-out;
+    box-shadow: var(--box-shadow);
+}
+
+#contact-form button[type="submit"]:hover {
+    background-color: var(--somaiya-orange-dark);
+    transform: scale(1.02);
+}
+
+.contact-info {
+    margin-top: 35px;
+    text-align: center;
+}
+
+/* --------------------------------------------------------------------- */
+/*  12. Footer
+/* --------------------------------------------------------------------- */
+footer {
+    background-color: var(--dark-gray);
+    color: var(--white);
+    padding: 40px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    margin-top: 25px;
+}
+
+.footer-links a {
+    color: var(--white);
+    margin: 0 15px;
+}
+
+.newsletter {
+    margin-top: 25px;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 280px; /* Slightly wider input */
+}
+
+.newsletter button {
+    background-color: var(--somaiya-orange);
+    color: var(--white);
+    padding: 10px 18px;  /* more padding */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+    background-color: var(--somaiya-orange-dark);
+}
+
+/* --------------------------------------------------------------------- */
+/*  13. Media Queries
+/* --------------------------------------------------------------------- */
+@media (max-width: 768px) {
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a {
+        margin: 8px 0;
+    }
+
+    .steps {
+        flex-direction: column;
+    }
+
+    .step {
+        width: 85%;
+    }
+
+    .success-stories-grid {
+        grid-template-columns: 1fr;
+    }
+}

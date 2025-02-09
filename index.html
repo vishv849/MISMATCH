@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SomaiyaMatch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>SomaiyaMatch</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#safety">Safety</a>
+            <a href="#success-stories">Success Stories</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Find Your Perfect Match at Somaiya</h2>
+            <p>Connect with fellow Somaiyaites who share your interests.</p>
+            <a href="#signup" class="cta-button">Find Your Match Now</a>
+        </div>
+    </section>
+
+    <section id="signup">
+        <h2>Quick Match</h2>
+        <form id="signup-form">
+            <label for="somaiya-email">Somaiya Email ID:</label>
+            <input type="email" id="somaiya-email" name="somaiya-email" placeholder="your.name@somaiya.edu" required>
+
+            <label for="instagram-handle">Instagram Handle:</label>
+            <input type="text" id="instagram-handle" name="instagram-handle" placeholder="@yourusername" required>
+
+            <label for="phone-number">Phone Number:</label>
+            <input type="tel" id="phone-number" name="phone-number" placeholder="Your phone number" required>
+
+            <label for="department">Department:</label>
+            <select id="department" name="department" required>
+                <option value="">Select Department</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Management">Management</option>
+                <option value="Arts">Arts</option>
+                <option value="Science">Science</option>
+                <!-- Add more departments as needed -->
+            </select>
+
+            <label for="about-you">About You:</label>
+            <textarea id="about-you" name="about-you" placeholder="Tell us about yourself, your interests, and what you're looking for..." required></textarea>
+
+            <label for="profile-photo">Upload Your Photo:</label>
+            <input type="file" id="profile-photo" name="profile-photo" accept="image/*" required>
+
+            <label>Interests (Select all that apply):</label>
+            <div class="interests">
+                <label><input type="checkbox" name="interests" value="Music"> Music</label>
+                <label><input type="checkbox" name="interests" value="Sports"> Sports</label>
+                <label><input type="checkbox" name="interests" value="Reading"> Reading</label>
+                <label><input type="checkbox" name="interests" value="Travel"> Travel</label>
+                <label><input type="checkbox" name="interests" value="Gaming"> Gaming</label>
+                <label><input type="checkbox" name="interests" value="Art"> Art</label>
+            </div>
+
+            <label for="terms">
+                <input type="checkbox" id="terms" name="terms" required>
+                I agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>
+            </label>
+
+            <button type="submit">Find My Match</button>
+        </form>
+    </section>
+
+    <section id="about">
+        <h2>About SomaiyaMatch</h2>
+        <p>Connecting Hearts Across Campus</p>
+        <ul>
+            <li><strong>Safe & Secure:</strong> Exclusively for Somaiya students with email verification ensuring a trusted community.</li>
+            <li><strong>Perfect Matches:</strong> Smart algorithm to connect you with compatible matches based on interests and preferences.</li>
+            <li><strong>Campus Connection:</strong> Meet people from different departments and expand your social circle within Somaiya.</li>
+        </ul>
+        <p>We understand the unique culture and environment of K J Somaiya campus. Our platform is specifically designed for students like you who want to connect with others who share similar interests and values.</p>
+    </section>
+
+    <section id="features">
+        <h2>Amazing Features</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <h3>Verified Profiles</h3>
+                <p>Only students with valid Somaiya email IDs can join, ensuring a safe and trusted community.</p>
+            </div>
+            <div class="feature">
+                <h3>Smart Matching</h3>
+                <p>Advanced algorithm matches you with compatible people based on interests and preferences.</p>
+            </div>
+            <div class="feature">
+                <h3>Privacy Control</h3>
+                <p>You control what information to share and who can see your profile.</p>
+            </div>
+            <div class="feature">
+                <h3>Instant Notifications</h3>
+                <p>Get notified immediately when you have a new match or message.</p>
+            </div>
+            <div class="feature">
+                <h3>Advanced Filters</h3>
+                <p>Find matches based on department, interests, and other preferences.</p>
+            </div>
+            <div class="feature">
+                <h3>Ice Breakers</h3>
+                <p>Start conversations easily with suggested topics and shared interests.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <h3>1. Sign Up</h3>
+                <p>Register with your Somaiya email ID</p>
+            </div>
+            <div class="step">
+                <h3>2. Create Profile</h3>
+                <p>Add your photo and preferences</p>
+            </div>
+            <div class="step">
+                <h3>3. Get Matches</h3>
+                <p>Receive compatible match suggestions</p>
+            </div>
+            <div class="step">
+                <h3>4. Connect</h3>
+                <p>Start chatting with your matches</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="safety">
+        <h2>Safety First</h2>
+        <h3>Safety Guidelines</h3>
+        <ul>
+            <li>Always meet in public places within campus initially</li>
+            <li>Never share sensitive personal information</li>
+            <li>Report suspicious behavior immediately</li>
+            <li>Trust your instincts - if something feels off, it probably is</li>
+            <li>Keep your matches within the Somaiya community</li>
+        </ul>
+        <h3>Our Safety Measures</h3>
+        <ul>
+            <li><strong>Email Verification:</strong> Only verified Somaiya email addresses are allowed to register</li>
+            <li><strong>Profile Moderation:</strong> All profiles are reviewed before going live</li>
+            <li><strong>Report System:</strong> Easy reporting of inappropriate behavior</li>
+            <li><strong>Data Protection:</strong> Your personal information is encrypted and secure</li>
+        </ul>
+        <p>Need Help? If you ever feel unsafe or need assistance, our support team is available 24/7. <a href="#contact">Contact Support</a></p>
+    </section>
+
+    <section id="success-stories">
+        <h2>Success Stories</h2>
+        <div class="success-stories-grid">
+            <div class="story">
+                <p>"We met through SomaiyaMatch and discovered we had so many common interests. Now we're planning our future together!"</p>
+                <p><strong>Rahul & Priya</strong> - Engineering Department</p>
+            </div>
+            <div class="story">
+                <p>"The matching algorithm really works! We both love photography and now we're dating for 6 months!"</p>
+                <p><strong>Anjali & Dev</strong> - Management Students</p>
+            </div>
+            <div class="story">
+                <p>"Who knew I'd find my soulmate right here on campus? Thanks SomaiyaMatch for bringing us together!"</p>
+                <p><strong>Arjun & Nisha</strong> - Arts & Engineering</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <ul>
+            <li><a href="#">Who can join SomaiyaMatch?</a></li>
+            <li><a href="#">Is my information secure?</a></li>
+            <li><a href="#">How does the matching algorithm work?</a></li>
+            <li><a href="#">Can I block someone?</a></li>
+            <li><a href="#">How do I update my profile?</a></li>
+        </ul>
+        <p>Still have questions? <a href="#contact">Contact Support</a></p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="somaiya-email-contact">Somaiya Email:</label>
+            <input type="email" id="somaiya-email-contact" name="somaiya-email" placeholder="your.name@somaiya.edu" required>
+
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject" required>
+                <option value="">Select a subject</option>
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Technical Support">Technical Support</option>
+                <option value="Safety Concern">Safety Concern</option>
+                <option value="Feedback">Feedback</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <h3>Quick Support</h3>
+            <p>Email Support: <a href="mailto:support@somaiyamatch.edu">support@somaiyamatch.edu</a></p>
+            <p>Response Time: Within 24 hours</p>
+            <h3>Emergency Support</h3>
+            <p>For urgent safety concerns:</p>
+            <p>Campus Security Hotline: +91 XXXX XXXX XX</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 SomaiyaMatch. All rights reserved.</p>
+            <p>Made with ❤️ for Somaiya Students.</p>
+            <div class="footer-links">
+                <a href="#support">Support</a>
+                <a href="#safety-tips">Safety Tips</a>
+                <a href="#faq">FAQs</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+            <div class="newsletter">
+                <label for="newsletter-email">Stay updated with the latest matches and events!</label>
+                <input type="email" id="newsletter-email" placeholder="Your Somaiya email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
